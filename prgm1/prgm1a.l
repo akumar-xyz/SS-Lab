@@ -3,14 +3,16 @@
 	int v=0,op=0,id=0,flag=0;
 	%}
 
-	%%
-	[a-z A-Z]+[0-9 A-Z a-z]*  {id++;printf("\n Identifier:");ECHO;}
-	[\+\-\*\/\=]    {op++;printf("\n Operator:");ECHO;}
-	"("    {v++;}
-	")"    {v--;}
-	";"    {flag=1;}
-	.|\n   {;}
-	%%
+%%
+
+[a-z A-Z]+[0-9 A-Z a-z]*  {id++;printf("\n Identifier:");ECHO;}
+[\+\-\*\/\=]    {op++;printf("\n Operator:");ECHO;}
+"("    {v++;}
+")"    {v--;}
+";"    {flag=1;}
+.|\n   {;}
+
+%%
 
 int main()
 {

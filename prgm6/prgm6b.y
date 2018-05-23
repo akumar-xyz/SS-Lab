@@ -9,7 +9,7 @@
 %%
 
 input:
-     DIGIT input {dig++;}
+  DIGIT input {dig++;}
 | ID input {id++;}
 | KEY input {key++;}
 | OP input {op++;}

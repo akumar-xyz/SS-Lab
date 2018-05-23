@@ -6,11 +6,10 @@ char STACK[20] = "\0";
 int TOP = -1, flag = 0;
 int B_ptr = 0;
 char BUFFER[20], G_prod[20];
-char table[3][3][10] = {
-	"NT", "a", "b",
-	"A", "aBa", "Error",
-	"B", "Îµ", "bB",
-};
+
+char table[3][3][10] = { "NT", "a", "b",
+			"A", "aBa", "Error",
+			"B", "Îµ", "bB" };
 
 char pop()
 {

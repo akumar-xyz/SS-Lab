@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+
 int arrival[10];
 int burst[10];
 int rem[10];
